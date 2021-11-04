@@ -1,0 +1,20 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: url("ALZ.jpg");
+    background-position: center;
+    padding-left: 5%;
+
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+
+
+
+}

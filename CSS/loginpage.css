@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+
+    background-image: url("/IMAGES/Login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.login {
+    width: 500px;
+    margin: 12% auto;
+    padding: 50px 0;
+
+    background: rgba(red, green, blue, 0.8);
+    color: #fff;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px 2px blueviolet;
+}
+
+.input-box {
+
+    margin: 10px auto;
+    width: 80%;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+
+.pass {
+
+    padding-left: 10em;
+
+}
+
+.pass a {
+    text-decoration: none;
+}
+
+.account a {
+    text-decoration: none;
+
+}
+
+.checkbox {
+
+    margin-right: 5px;
+}
+
+.fa {
+
+    margin-right: 10px;
+
+}
+
+.eye {
+    position: absolute;
+}
+
+#hide1 {
+    display: none;
+
+}
+
+.submit {
+
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid blue;
+    cursor: pointer;
+    background: blue;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+
+}
