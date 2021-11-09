@@ -7,9 +7,9 @@
 
 
 .image {
-    height: 100vh;
+    height: 60vh;
     width: 100%;
-    background-image: url("IMAGES/india-kerala-149251808216o.jpeg");
+    background-image: url("/IMAGES/india-kerala-149251808216o.jpeg");
     background-position: center;
     background-size: cover;
 }
