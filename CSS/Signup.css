@@ -1,69 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
 * {
-    margin: 0px;
-    padding: 0%;
+    box-sizing: border-box;
 }
 
 body {
-
-    height: 100%;
-    background-position: top;
-    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    background-size: calc(147%);
+    display: flex;
+    background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.icon {
+    margin-left: 13em;
 }
 
 .login {
-    width: 600px;
-    height: 600px;
-    top: 70%;
-    left: 50%;
+    background: rgba(red, green, blue, 0.9);
+    margin: 12% auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
     position: absolute;
-
-    border: 2px solid red;
-    background-color: rgba(red, green, blue, 0.8);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    box-sizing: border-box;
-    box-shadow: 0 0 20px 2px black;
-}
-
-.input-box {
-
-    margin: 10px auto;
-    width: 80%;
-    border-bottom: 1px solid white;
-    padding-top: 10px;
-    padding-bottom: 1px;
-}
-
-.fa {
-
-    margin-right: 10px;
+    margin-top: 37%;
 
 }
 
-.eye {
-    position: absolute;
-
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
 }
 
-#hide1 {
-    display: none;
-
+.header h2 {
+    margin: 0;
 }
 
-.submit {
+.form {
+    padding: 30px 40px;
+}
 
-    margin: 40px auto 20px;
-    width: 75%;
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    border-bottom: 1px solid;
     display: block;
-    outline: none;
-    padding: 10px 0;
-    border: 1px solid blue;
-    cursor: pointer;
-    background: blue;
-    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i.fa-check-circle {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.form-control i.fa-eye {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+}
+
+.form-control i.fa-eye-slash {
+    position: absolute;
+    display: none;
+    top: 50px;
+    right: 35px;
+}
+
+.form-control i.fa-exclamation-circle {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: #0072ff;
+    border: 2px solid #0072ff;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
     font-size: 16px;
-    border-radius: 20px;
-    ;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pass {
+
+    padding-left: 15em;
+
+}
+
+.pass a {
+    text-decoration: none;
+}
+
+.account {
+    text-align: center;
+
+}
+
+.account a {
+    text-decoration: none;
+
 }

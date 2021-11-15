@@ -1,44 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-
-
+    font-family: 'Open Sans', sans-serif;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.icon {
+    margin-left: 13em;
 }
 
 .login {
-    width: 500px;
+    background: rgba(red, green, blue, 0.9);
     margin: 12% auto;
-    padding: 50px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    position: absolute;
+    margin-top: 27%;
 
-    background: rgba(red, green, blue, 0.8);
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    border-bottom: 1px solid;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i.fa-check-circle {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.form-control i.fa-eye {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+}
+
+.form-control i.fa-eye-slash {
+    position: absolute;
+    display: none;
+    top: 50px;
+    right: 35px;
+}
+
+.form-control i.fa-exclamation-circle {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: #0072ff;
+    border: 2px solid #0072ff;
+    border-radius: 4px;
     color: #fff;
-
-    text-align: center;
-
-    box-shadow: 0 0 20px 2px blueviolet;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
-
-.input-box {
-
-    margin: 10px auto;
-    width: 80%;
-    border-bottom: 1px solid white;
-    padding-top: 10px;
-    padding-bottom: 1px;
-}
-
 
 .pass {
 
-    padding-left: 10em;
+    padding-left: 15em;
 
 }
 
@@ -46,43 +154,12 @@ body {
     text-decoration: none;
 }
 
+.account {
+    text-align: center;
+
+}
+
 .account a {
     text-decoration: none;
-
-}
-
-.checkbox {
-
-    margin-right: 5px;
-}
-
-.fa {
-
-    margin-right: 10px;
-
-}
-
-.eye {
-    position: absolute;
-}
-
-#hide1 {
-    display: none;
-
-}
-
-.submit {
-
-    margin: 40px auto 20px;
-    width: 80%;
-    display: block;
-    outline: none;
-    padding: 10px 0;
-    border: 1px solid blue;
-    cursor: pointer;
-    background: blue;
-    color: white;
-    font-size: 16px;
-    border-radius: 20px;
 
 }
